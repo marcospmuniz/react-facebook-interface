@@ -1,13 +1,19 @@
-import React from 'react';
+import React from "react";
 import "./Header.css";
 
-import facebook1 from '../assets/images/facebook-1.png';
+import facebook1 from "../assets/images/facebook-1.png";
 
 function Header() {
   return (
-    <div id="header">
-      <img src={facebook1} />
-    </div>
+    <header>
+      <nav>
+        <img src={facebook1} />
+        <div>
+          <span>Meu perfil</span>
+          <i className="material-icons">account_circle</i>
+        </div>
+      </nav>
+    </header>
   );
 }
 
